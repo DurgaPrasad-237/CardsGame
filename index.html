@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CardsGame</title>
+        <link rel="stylesheet" href="styles.css">
+    </head> 
+    <body>
+        <section id="header">
+            <div class="heading"><span>GameOn...</span></div>
+        </section>
+        <form id="name">
+            <label>Enter your name</label>
+            <input type="text" id="nameInput"> 
+            <input type="submit" value="Submit" style="width:100px">
+        </form>
+
+
+        <section id="play">
+            <div class="start" onclick="start()">START</div>
+            <div class=stop onclick="stop()">STOP</div>
+        </section>
+
+
+        <section id="gamecontainer">
+                <div id="player">
+                    <img src="images/top.png" onclick="uparrow()" id="uparrow">
+                    <div class="imagestore">
+                        <div id="image"></div>
+                    </div>
+                    <p class="playername"></p>
+                    <div class="carddetails">
+                        <div class="matches detailsfont" onclick="displayClickedElement(this)"></div>
+                        <div class="best detailsfont" onclick="displayClickedElement(this)"></div>
+                        <div class="Average detailsfont" onclick="displayClickedElement(this)"></div>
+                        <div class="Hundreds detailsfont" onclick="displayClickedElement(this)"></div>
+                        <div class="fifties detailsfont" onclick="displayClickedElement(this)"></div>
+                        <div class="wickets detailsfont" onclick="displayClickedElement(this)"></div>
+                        <div class="runs detailsfont" onclick="displayClickedElement(this)"></div>
+                        <div class="stumpings detailsfont" onclick="displayClickedElement(this)"></div>
+                        
+                    </div>
+                    <img src="images/bottom.png" width="40px" height="30px" style="position: relative;top:15px;" onclick="downarrow()" id="lowarrow">
+                </div>
+
+                <div class="resultbox">
+                <div class="playerbox">
+                    <div class="child1">
+                               <h3>PlayerName</h3>
+                                <h4 id="noutput"></h4>
+                                <h1 id="output">Score</h1>
+                                <h2 id="pscore"></h2>
+                    </div>
+
+                    <div class="child2">
+                        <h3>Computer</h3>
+                        <h1 id="coutput"></h1>
+                        <h1>Score</h1>
+                        <h2 id="cscore"></h2>            
+                    </div>
+
+                </div>
+
+                    <div class="finalresult">
+                        <h1 id="won">won:</h1>
+                    </div>
+
+            
+                </div>
+
+
+                <div id="computer"  class="computer-card">
+                    <div class="imagestore">
+                        <div id="cimage"></div>
+                    </div>
+                    <p class="cplayername"></p>
+                    <div class="carddetails">
+                        <div class="cmatches detailsfont"></div>
+                        <div class="cbest detailsfont"></div>
+                        <div class="cAverage detailsfont"></div>
+                        <div class="cHundreds detailsfont"></div>
+                        <div class="cfifties detailsfont"></div>
+                        <div class="cwickets detailsfont"></div>
+                        <div class="cruns detailsfont"></div>
+                        <div class="cstumpings detailsfont"></div>
+                        
+                    </div>
+                </div>
+
+
+                </div>
+        </section>
+        <script src="script.js"></script>
+       
+       
+   
+    
+    </body>
+</html>
+   
