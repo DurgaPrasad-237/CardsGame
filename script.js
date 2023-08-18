@@ -107,6 +107,7 @@ function uparrow() {
         window.alert('you not suppose to do now')
     }
     else{
+        op = "";
     l++;
     if (l < players.length) {
         updateDetails(l);
@@ -122,6 +123,7 @@ function downarrow() {
         window.alert('you not suppose to do now')
     }
     else{
+        op = "";
     l--;
     if (l >= 0) {
         updateDetails(l);
