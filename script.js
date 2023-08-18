@@ -90,14 +90,22 @@ function updateDetails(playerIndex) {
     }
 }
 var op = "";
+let selectedElement = null;
 function displayClickedElement(element) {
+    if (selectedElement) {
+        selectedElement.style.backgroundColor = "";
+      
+    }
+   
+    selectedElement = element;
     selectedAttribute = element.textContent;
     const outputElement = document.getElementById("output");
     outputElement.textContent = selectedAttribute;
     op = "";
-    console.log(op.length);
+   
     op += outputElement.textContent;
-
+    element.style.backgroundColor = "#f79a5a";
+    
 }
 
 updateDetails(0); 
@@ -123,7 +131,7 @@ function downarrow() {
         window.alert('you not suppose to do now')
     }
     else{
-        op = "";
+        op="";
     l--;
     if (l >= 0) {
         updateDetails(l);
@@ -134,21 +142,6 @@ function downarrow() {
 }
 }
 
-// function start() {
-//     let j = 2;
-//     let i = 0;
-//      for (let x = 0; x < players.length; x++) {
-//         cdetails[x].innerHTML = Object.keys(players[i])[j] + ': ' + players[i][Object.keys(players[i])[j]];
-//         j++;
-//     }
-
-//     let computerIndex = 0;
-//     intervalId = setInterval(() => {
-//         cupdateDetails(computerIndex);
-//         computerIndex = (computerIndex + 1) % players.length;
-//     }, 400);
-   
-// }
 
 let xxxx = 0;
 function start() {
@@ -221,7 +214,7 @@ function stop() {
         cscore.innerHTML = cs;
         
     }
-    else{
+    else if(value == cvalue){
         won.innerHTML = "won:DRAW"  
     }
 }
