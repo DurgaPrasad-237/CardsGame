@@ -251,7 +251,6 @@ body {
 }
 #pscore, #cscore{
     position: fixed;
-    border:2px solid white;
     height:100px;
     width:100px;
     display: flex;
@@ -432,7 +431,140 @@ body {
   }
   /* iPads, Tablets (481px - 768px) */
   @media only screen and (min-width: 481px) and (max-width: 768px) {
-    /* CSS styles for iPads and tablets go here */
+    body{
+        width:780px;
+    }
+    #header {
+        width: 780px;  
+    }
+    #name label {
+        display: flex;
+        align-items: center;
+    }
+    #play {
+        width: 500px;
+        height: 100px;
+        margin-top:20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #gamecontainer {
+        width: 650px;
+        height: 800px;
+        margin-top: 30px;
+        position:relative;
+        border:2px solid white;
+    }
+    #player{
+        width: 300px;
+        height: 480px;
+        border:2px solid white;   
+        position: absolute;
+        left:-10px;
+        top:30px;
+    }
+    .imagestore {
+        width: 100px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+       
+    }
+    #image {
+        width: 110px;
+        height: 110px;
+    }
+    #player .carddetails {
+        width: 90%;
+        height: 200px;  
+    }
+    .carddetails div {
+        border: 2px solid white;
+        width: 100px;
+        height: 20px;
+        margin: auto auto;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    #computer{
+        width: 300px;
+        height: 480px;
+        border:2px solid white;   
+        position: absolute;
+        right:-10px;
+        top:30px;
+    }
+
+
+
+
+    #cimage {
+        width: 110px;
+        height: 110px;
+    }
+    #computer .ccarddetails {
+        width: 90%;
+        height: 200px;  
+    }
+    .ccarddetails div {
+        border: 2px solid white;
+        width: 100px;
+        height: 20px;
+        margin: auto auto;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    .playername, .cplayername {
+        color: white;
+        font-size: 15px;
+    }
+   
+    .child1 {
+        width: 650px;
+        height: 100px;
+        position:absolute;
+        top:600px;
+        flex-wrap: wrap;  
+        margin:auto auto;
+    }
+    .child2 {
+        width: 650px;
+        height: 100px;
+        position:absolute;
+        top:720px;
+        flex-wrap: wrap;  
+    }
+    #pscore, #cscore {
+        position: absolute;
+        border: none;
+        height: 30px;
+        width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 0px; 
+    }
+    #pscore h2{
+        font-size: 10px;
+    }
+    #cscore h2{
+        font-size: 10px;
+    } 
+    #won {   
+        background-color: #808080;
+        position:absolute;
+        width:650px;
+        margin:auto auto;
+        top:550px;
+    }
+
+
+
+
   }
   
   /* Small screens, laptops (769px - 1024px) */
