@@ -12,5 +12,11 @@
   <h1>HTML</h1>
   <li>FlexBoX</li>
   <li>forms</li>
+   <h1>CSS</h1>
+   <li>Pseudo-Class</li>
+  <li>Fonts</li>
+   <li>List</li>  
 </ul>
 <a href="https://durgaprasad-237.github.io/CardsGame/">Click the link here to view the site</a>
+<img src="">
+
