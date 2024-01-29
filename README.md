@@ -18,5 +18,5 @@
    <li>List</li>  
 </ul>
 <a href="https://durgaprasad-237.github.io/CardsGame/">Click the link here to view the site</a>
-<img src="">
+<img src="/images/Screenshot (76).png">
 
